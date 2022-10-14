@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 /**
-  * main - pribts number combination with two digits
-  * Return: zero
-  */
+    * main - pribts number combination with two digits
+      * Return: zero
+        */
 int main(void)
 {
 
 	int i, j, k, l;
-
 	for (i = 48; i < 58; i++)
 	{
 		for (j = 48; j < 58; j++)
