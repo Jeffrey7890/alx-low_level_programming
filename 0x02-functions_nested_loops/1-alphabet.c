@@ -2,16 +2,13 @@
 #include "main.h"
 
 /**
-   * main - check the code
-    *
-     * Return: Always 0.
+ * print_alphabet - prints a-z
  */
-
-void print_alphabet()
+void print_alphabet(void)
 {
 	int i;
 
-	for (i = 97; i < (97+26); i++)
+	for (i = 97; i < (97 + 26); i++)
 	{
 		_putchar(i);
 	}

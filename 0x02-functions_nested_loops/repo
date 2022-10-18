@@ -1,2 +1,2 @@
 #!/bin/bash
-export REPO=alx-low_level_programming.git
+REPO=alx-low_level_programming.git
