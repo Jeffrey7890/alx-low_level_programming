@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_sign - gets the absolute of any number
+ * _abs - gets the absolute of any number
  * @c: number to check
  * Return: positive value of any numbe
  */
