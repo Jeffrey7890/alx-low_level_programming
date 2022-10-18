@@ -1,5 +1,21 @@
 #ifndef _PUTCHAR
 #define _PUTCHAR
+#include <stdio.h>
+/**
+  * print_alphabet: prints a-z
+  */
+void print_alphabet()
+{
+	int i;
+
+	for (i = 97; i < (97+26); i++)
+	{
+		putchar(i);
+	}
+	putchar('\n');
+}
+
+
 
 void print_putchar(const char *word)
 {
