@@ -4,6 +4,11 @@
 /**
   * print_alphabet: prints a-z
   */
+int add(int, int);
+
+void jack_bauer(void);
+
+int print_last_digit(int);
 
 int _abs(int);
 
