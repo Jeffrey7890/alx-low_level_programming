@@ -1,11 +1,23 @@
-#include <stdio.h>
+
 #include "main.h"
 /**
   * main - print _putchar
   * Return: zero
   */
-int main(void)
+
+void print_putchar(const char *word)
 {
-	print_putchar("_putchar");
-	return (0);
+	int i = 0;
+        char ch = word[i];
+	while (ch != '\0')
+	{
+		_putchar(ch);
+		++i;
+		ch = word[i];
+		
+	}
+	putchar('\n');
 }
+
+
+
