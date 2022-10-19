@@ -10,7 +10,7 @@ void jack_bauer(void)
 
 	for (thr = 48; thr < 51; thr++)
 	{
-		for (uhr = 48; uhr < 52; uhr++)
+		for (uhr = 48; uhr < 58; uhr++)
 		{
 			for (cnt = 48; cnt < 54; cnt++)
 			{
@@ -22,6 +22,8 @@ void jack_bauer(void)
 					_putchar(cnt);
 					_putchar(i);
 					_putchar('\n');
+					if ((thr == 2) && (uhr == 3) && (cnt == 5) && (i == 9))
+						break;
 				}
 			}
 		}

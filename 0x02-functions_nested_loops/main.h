@@ -4,6 +4,8 @@
 /**
   * print_alphabet: prints a-z
   */
+void times_table(void);
+
 int add(int, int);
 
 void jack_bauer(void);
@@ -25,5 +27,6 @@ void print_alphabet();
 void print_putchar(const char *word);
 
 int _putchar(int c);
+
 
 #endif
