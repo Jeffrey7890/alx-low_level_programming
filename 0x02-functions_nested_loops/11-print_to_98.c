@@ -96,8 +96,9 @@ void print_to_98(int n)
 			_putdigits(i);
 			_putchar(',');
 		}
+		_putchar(' ');
 	}
-	else
+	else if (n > 98)
 	{
 		for (i = n - 1; i > 98; i--)
 		{
@@ -105,8 +106,8 @@ void print_to_98(int n)
 			_putdigits(i);
 			_putchar(',');
 		}
+		_putchar(' ');
 	}
-	_putchar(' ');
 	_putdigits(98);
 	_putchar('\n');
 }
