@@ -37,7 +37,7 @@ void _putdigits(int digit)
 }
 
 /**
-  * times_tables - prints 9 times table
+  * times_table - prints 9 times table
   */
 void times_table(void)
 {
