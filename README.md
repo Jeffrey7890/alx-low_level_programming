@@ -1,1 +1,1 @@
-Folder store c files and answers to alx low level programing project :smile:
+Readme file for duck debugging
