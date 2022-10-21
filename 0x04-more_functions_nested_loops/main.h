@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <limits.h>
+
 int _isdigit(int c);
 
 int _isupper(int c);
@@ -11,6 +13,11 @@ int mul(int c, int d);
 
 void print_numbers(void);
 
+void more_numbers(void);
 
 int _putchar(char c);
+
+
+
+
 #endif
