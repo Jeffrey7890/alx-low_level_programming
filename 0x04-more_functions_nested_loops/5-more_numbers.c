@@ -13,10 +13,10 @@ void _putdigit(int digit)
 	*	digit *= -1;
 	*	_putchar('-');
 	*}
-	*if (digit == 0)
-	*	_putchar('0');
-	*else{}
-	 */
+	*/
+	if (digit == 0)
+		_putchar('0');
+
 	while (digit > 0)
 	{
 		rem = (digit % mod) / offset;
