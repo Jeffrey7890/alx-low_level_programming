@@ -40,7 +40,7 @@ void _putdigits(int digit)
 	digit_cnt = count_digit(digit) + 1;
 	index = digit_cnt;
 	for (i = 0; i < 11; i++)
-		arr[i] = ' ';
+:c
 	i = 1;
 
 	if (digit == 0)

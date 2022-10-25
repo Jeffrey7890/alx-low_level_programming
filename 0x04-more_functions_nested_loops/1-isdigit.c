@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  *  _isdigit - checks if charbis digit
+  * _isdigit - checks if charbis digit
   * @c: number to check
   * Return: 1 if digit 0 if not
   */
