@@ -31,6 +31,7 @@ char *_strcat(char *dest, char *src);
 
 void reset_to_98(int *n);
 
+void print_diagsums(int *a, int size);
 char *_strcpy(char *dest, char *src);
 
 char *string_toupper(char *);
