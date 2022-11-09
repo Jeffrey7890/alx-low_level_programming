@@ -7,7 +7,7 @@ char *create_array(unsigned int size, char c);
 int _isdigit(int c);
 char *_strdup(char *str);
 int _isupper(int c);
-
+char *str_concat(char *s1, char *s2);
 void print_most_numbers(void);
 
 int mul(int c, int d);
