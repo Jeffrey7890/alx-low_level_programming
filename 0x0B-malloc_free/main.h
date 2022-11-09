@@ -11,7 +11,7 @@ char *str_concat(char *s1, char *s2);
 void print_most_numbers(void);
 int **alloc_grid(int width, int height);
 int mul(int c, int d);
-
+void free_grid(int **grid, int height);
 void print_numbers(void);
 
 void more_numbers(void);
