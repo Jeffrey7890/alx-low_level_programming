@@ -9,7 +9,7 @@ char *_strdup(char *str);
 int _isupper(int c);
 char *str_concat(char *s1, char *s2);
 void print_most_numbers(void);
-
+int **alloc_grid(int width, int height);
 int mul(int c, int d);
 
 void print_numbers(void);
