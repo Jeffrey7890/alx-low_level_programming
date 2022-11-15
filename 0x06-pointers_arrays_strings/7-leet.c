@@ -9,7 +9,7 @@
 char *leet(char *s)
 {
 	int size, i;
-	
+
 	size = strlen(s);
 
 	for (i = 0; i < size; i++)
