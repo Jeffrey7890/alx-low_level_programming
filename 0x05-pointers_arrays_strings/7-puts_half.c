@@ -1,5 +1,3 @@
-
-
 #include "main.h"
 
 /**
@@ -17,13 +15,14 @@ void puts_half(char *str)
 		length++;
 		start++;
 	}
-
+	length++;
 
 	if ((length % 2) == 1)
 		n = (length - 1) / 2;
-	n = length / 2;
+	else
+		n = length / 2;
 
-	for (i = (n + 1); i < length; i++)
+	for (i = (n); i < length; i++)
 		_putchar(*(str + i));
 	_putchar('\n');
 
