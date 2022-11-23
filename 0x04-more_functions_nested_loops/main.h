@@ -16,7 +16,7 @@ int mul(int c, int d);
 void print_numbers(void);
 
 void more_numbers(void);
-
+void print_number(int n);
 int _putchar(char c);
 
 void print_square(int size);
