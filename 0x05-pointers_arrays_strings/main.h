@@ -5,6 +5,8 @@
 
 int _isdigit(int c);
 
+int _atoi(char *s);
+
 int _isupper(int c);
 
 void print_most_numbers(void);
