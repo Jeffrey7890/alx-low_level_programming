@@ -6,7 +6,8 @@
   */
 void print_number(int n)
 {
-	long int numb = 0;
+
+	unsigned int numb = 0;
 
 	if (n == 0)
 		_putchar('0');
@@ -16,6 +17,8 @@ void print_number(int n)
 		_putchar('-');
 		n *= -1;
 	}
+
+
 	while (n > 0)
 	{
 		numb += (n % 10);
