@@ -5,6 +5,8 @@
 
 int _isdigit(int c);
 
+void print_triangle(int size);
+
 int _isupper(int c);
 
 void print_most_numbers(void);
