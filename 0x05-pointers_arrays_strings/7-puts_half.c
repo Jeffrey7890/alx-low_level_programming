@@ -10,7 +10,6 @@ void puts_half(char *str)
 {
 	int length = strlen(str), n, i;
 
-	printf("length: %d\n", length);
 	/* char *start = str; */
 
 	if ((length % 2) == 1)
