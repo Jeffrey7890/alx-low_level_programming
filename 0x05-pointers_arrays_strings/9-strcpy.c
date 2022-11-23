@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
   * _strcpy - copy string from src to dest
@@ -9,17 +10,12 @@
   */
 char *_strcpy(char *dest, char *src)
 {
-	char *ptr = dest;
+	int i, length = strlen(src);
 
-	do {
-		*dest = *src;
-
-		src++;
-		dest++;
-	} while (*src != '\0');
-	dest = '\0';
-	src = '\0';
-	dest = ptr;
+	for (i = 0; i < length; i++)
+	{
+		dest[i] = src[i];
+	}
 
 	return (dest);
 
