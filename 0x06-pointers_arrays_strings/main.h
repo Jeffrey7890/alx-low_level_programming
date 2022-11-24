@@ -9,6 +9,12 @@ int _isupper(int c);
 
 void print_most_numbers(void);
 
+char *cap_string(char *);
+
+char *rot13(char *);
+
+char *leet(char *);
+
 int _strcmp(char *s1, char *s2);
 
 int mul(int c, int d);
