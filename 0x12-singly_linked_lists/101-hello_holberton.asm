@@ -5,7 +5,7 @@ section .text
 
 main:
 	push rbp
-	
+
 	mov rdi, fmt
 	mov rsi, message
 	mov rax, 0
