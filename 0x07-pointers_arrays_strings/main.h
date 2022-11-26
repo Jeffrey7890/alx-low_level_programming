@@ -6,7 +6,7 @@
 int _isdigit(int c);
 
 int _isupper(int c);
-
+char *_memcpy(char *dest, char *src, unsigned int n);
 void print_most_numbers(void);
 char *_memset(char *s, char b, unsigned int n);
 
