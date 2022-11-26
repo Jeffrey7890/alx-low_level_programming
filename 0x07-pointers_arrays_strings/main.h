@@ -9,6 +9,7 @@ int _isupper(int c);
 char *_memcpy(char *dest, char *src, unsigned int n);
 void print_most_numbers(void);
 char *_memset(char *s, char b, unsigned int n);
+char *_strpbrk(char *s, char *accept);
 
 int _strcmp(char *s1, char *s2);
 char *_strchr(char *s, char c);
