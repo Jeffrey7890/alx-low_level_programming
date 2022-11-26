@@ -16,9 +16,12 @@ size_t print_list(const list_t *h)
 	for (; traverse != NULL; traverse = traverse->next)
 	{
 		if (traverse->str == NULL)
+		{
 			printf("[0] (nil)\n");
-		else
-			printf("[%d] %s\n", traverse->len, traverse->str);
+			traverse = traverse->next;
+			size++;
+		}
+		printf("[%d] %s\n", traverse->len, traverse->str);
 		size++;
 	}
 	return (size);
