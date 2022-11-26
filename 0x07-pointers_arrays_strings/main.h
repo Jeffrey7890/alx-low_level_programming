@@ -13,7 +13,7 @@ char *_memset(char *s, char b, unsigned int n);
 int _strcmp(char *s1, char *s2);
 char *_strchr(char *s, char c);
 int mul(int c, int d);
-
+unsigned int _strspn(char *s, char *accept);
 void print_numbers(void);
 
 void more_numbers(void);
