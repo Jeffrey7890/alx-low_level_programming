@@ -11,7 +11,7 @@ void print_most_numbers(void);
 char *_memset(char *s, char b, unsigned int n);
 
 int _strcmp(char *s1, char *s2);
-
+char *_strchr(char *s, char c);
 int mul(int c, int d);
 
 void print_numbers(void);
