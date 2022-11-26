@@ -8,6 +8,7 @@ int _isdigit(int c);
 int _isupper(int c);
 
 void print_most_numbers(void);
+char *_memset(char *s, char b, unsigned int n);
 
 int _strcmp(char *s1, char *s2);
 
