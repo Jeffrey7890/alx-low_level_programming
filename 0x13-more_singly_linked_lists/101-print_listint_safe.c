@@ -38,7 +38,7 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		if (search(&new_node, temp->n))
 		{
-			printf("->[%p] %d\n", (void *)temp, temp->n);
+			printf("-> [%p] %d\n", (void *)temp, temp->n);
 			exit(98);
 		}
 		add_nodeint(&new_node, temp->n);
