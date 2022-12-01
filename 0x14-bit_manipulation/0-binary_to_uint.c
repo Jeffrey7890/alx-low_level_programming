@@ -35,6 +35,13 @@ unsigned int binary_to_uint(const char *b)
 
 		if (n < 0)
 			return (0);
+
+		/**
+		  * x << n = x * 2**n
+		  * Notice when left shefting, the result is always
+		  * 2**n, so i just shifted 1 i times to get 2**i
+		  * for each char
+		  */
 		uint += n * (1 << i);
 		i++;
 		t--;
