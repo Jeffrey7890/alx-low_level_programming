@@ -1,5 +1,5 @@
 #include "main.h"
-#include "stdio.h"
+
 
 /**
   * get_bit - gets the value of bit at a given index
