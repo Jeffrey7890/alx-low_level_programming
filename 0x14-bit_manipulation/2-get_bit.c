@@ -11,10 +11,14 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int count = 0;
 
+	/* number of bits in an unsigned long int type */
+	unsigned int size = (1 << sizeof(n)) / sizeof(int);
+
 	if (n == 0 && count == index)
 		return (n);
 
-	while (n > 0)
+	/* index should not be greater than the number of bits also */
+	while (n > 0 && index < size)
 	{
 		if (count == index)
 			return (n & 1);
