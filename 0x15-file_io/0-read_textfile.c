@@ -39,11 +39,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buf[letters] = '\0';
 
 	count_w = write(STDOUT_FILENO, buf, count_r);
+	free(buf);
 
 	if (count_w == -1 || count_w != (int)letters)
 		return (0);
-
-	free(buf);
 
 	return (count_r);
 }
