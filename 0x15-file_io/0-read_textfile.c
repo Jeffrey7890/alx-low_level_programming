@@ -44,5 +44,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (count_w == -1 || count_w != (int)letters)
 		return (0);
 
+	if (close(fd) == -1)
+		return (0);
 	return (count_r);
 }
