@@ -19,7 +19,7 @@ unsigned int _strspn(char *s, char *accept);
 void print_numbers(void);
 void print_chessboard(char (*a)[8]);
 void more_numbers(void);
-
+void set_string(char **s, char *to);
 int _putchar(char c);
 
 void print_square(int size);
