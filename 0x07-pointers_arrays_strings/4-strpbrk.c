@@ -4,7 +4,7 @@
 #include "string.h"
 
 /**
-  * _strbpbrk - searches for any of a set of bytes
+  * _strpbrk - searches for any of a set of bytes
   *
   * @s: string
   *
