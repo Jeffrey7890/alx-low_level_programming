@@ -3,6 +3,7 @@
 
 #include <limits.h>
 
+char *_strstr(char *haystack, char *needle);
 int _isdigit(int c);
 
 int _isupper(int c);
