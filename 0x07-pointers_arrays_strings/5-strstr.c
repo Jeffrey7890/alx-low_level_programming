@@ -13,6 +13,8 @@ char *_strstr(char *haystack, char *needle)
 
 	char *ptr, *h, *n;
 
+	if ((haystack == NULL) || (needle == NULL))
+		return (NULL);
 
 	h = haystack;
 	n = needle;
