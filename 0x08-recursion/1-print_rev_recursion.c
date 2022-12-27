@@ -7,13 +7,21 @@
   * @s: string to print
   * @n: length of string
   */
-void print_str(char *s, int n)
+void print_str(char *s, char *n)
 {
-	if (n < 0)
+
+	if (n < s)
+	{
 		return;
-	_putchar(s[n]);
+	}
 	n--;
+
+	if (*n == '\0')
+		return;
+	_putchar(*n);
+
 	print_str(s, n);
+
 }
 
 /**
@@ -23,6 +31,7 @@ void print_str(char *s, int n)
 void _print_rev_recursion(char *s)
 {
 	int n = strlen(s);
+	/* printf("length: %d\n", n);*/
 
-	print_str(s, n);
+	print_str(s, s + n);
 }
