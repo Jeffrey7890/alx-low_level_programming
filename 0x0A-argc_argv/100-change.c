@@ -12,22 +12,22 @@ int getchange(int n)
 
 	while (n != 0)
 	{
-		if (n % 25 == 0)
+		if (n >= 25)
 		{
 			n -= 25;
 			change += 1;
 		}
-		else if (n % 10 == 0)
+		else if (n < 25 && n >= 10)
 		{
 			n -= 10;
 			change += 1;
 		}
-		else if (n % 5 == 0)
+		else if (n < 10 && n >= 5)
 		{
 			n -= 5;
 			change += 1;
 		}
-		else if (n % 2 == 0)
+		else if (n < 5 && n >= 2)
 		{
 			n -= 2;
 			change += 1;
