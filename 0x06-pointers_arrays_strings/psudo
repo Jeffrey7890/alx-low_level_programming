@@ -1,0 +1,15 @@
+char_sum
+	sum = (a - '0') + (b - '0')
+	REM = '0' + ((sum - (sum % 10)) / 10);
+	return ('0' + (sum % 10))
+
+
+for i or j >0; i--, j--, k++
+	buffer[k] = char_sum(n1[i], n2[j]) + REM
+
+for i > 0; i--,k++
+	buffer[k] = n1[i]
+
+for j> 0; j--, k++
+	buffer[k] = n2[j]
+

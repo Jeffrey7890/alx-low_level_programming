@@ -1,0 +1,20 @@
+int search_int(const listint_t **head, int value)
+	while (*head != NULL)
+		if (value == (*head)->value)
+			return (1)
+		head = head->next
+	return 0
+
+size_t print_listint_safe(const listint_t *head)
+	listint_t *newList;
+
+	int i = 0;
+
+	loop through head:
+		if search(newList, head->value):
+			printf(head, head->value)
+		add_nodeint(&newList, head->value);
+		printf(head, head->value)
+		head = head->next;
+
+	return (i);
