@@ -8,8 +8,14 @@
   */
 int todigit(char *n)
 {
-	int number = 0, exp = 10, cnt = strlen(n), i;
+	int number = 0, exp = 10, cnt = strlen(n), i, sign = 1;
 
+	if (n[0] == '-')
+	{
+		sign *= -1;
+		n++;
+		cnt--;
+	}
 	for (i = 0; i < cnt - 1; i++)
 	{
 		if (n[i] >= 48 && n[i] <= 57)
@@ -21,6 +27,7 @@ int todigit(char *n)
 			return (0);
 	}
 	number += (n[i] - 48);
+	number *= sign;
 	return (number);
 }
 
