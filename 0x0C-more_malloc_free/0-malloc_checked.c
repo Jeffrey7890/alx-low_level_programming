@@ -9,9 +9,8 @@
   */
 void *malloc_checked(unsigned int b)
 {
-	void *ptr = malloc(sizeof(b) * b);
+	void *ptr = malloc(sizeof(b));
 
-	printf("byte size: %d", b);
 	if (ptr == NULL)
 	{
 		printf("Failed");
