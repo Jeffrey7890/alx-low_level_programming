@@ -15,6 +15,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	void *ptr;
 
+	if (nmemb == 0 || size == 0)
+		return (0);
 	overflow = nmemb * size;
 
 	/* Avoid integer overflow */
