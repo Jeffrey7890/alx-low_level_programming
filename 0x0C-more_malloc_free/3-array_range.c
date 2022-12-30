@@ -12,15 +12,12 @@ int *array_range(int min, int max)
 {
 	int *arr, size, i, overflow, cnt = 0;
 
-	if (min > max)
-		return (NULL);
 	if (min == 0 && max == 0)
 		return (NULL);
-	size = (max - min);
+	size = (max - min) + 1;
 
 	if (size < 0)
-		size *= -1;
-	size += 1;
+		return (NULL);
 
 	overflow = size * sizeof(int);
 	/* avoid overflow */
