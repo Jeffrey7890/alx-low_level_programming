@@ -11,20 +11,20 @@
   */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	if (nmemb <= 0 || size < = 0)
+	int overflow;
+
+	void *ptr;
+
+	overflow = nmemb * size;
+
+	/* Avoid integer overflow */
+	if (overflow < 0)
 		return (NULL);
 
-	void *ptr = malloc(nmemb * size);
-	
-	int i;
+	ptr = malloc(overflow);
 
 	if (ptr == NULL)
-		return (NULL)
-
-	for (i = 0; i < nmemb; i++)
-	{
-		ptr[i] = 0;
-	}
-
+		return (NULL);
+	bzero(ptr, nmemb * size);
 	return (ptr);
 }
