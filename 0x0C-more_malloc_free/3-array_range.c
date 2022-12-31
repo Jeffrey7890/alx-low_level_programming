@@ -14,10 +14,11 @@ int *array_range(int min, int max)
 
 	if (min == 0 && max == 0)
 		return (NULL);
-	size = (max - min) + 1;
+	size = (max - min);
 
 	if (size < 0)
-		return (NULL);
+		size *= -1;
+	size += 1;
 
 	overflow = size * sizeof(int);
 	/* avoid overflow */
