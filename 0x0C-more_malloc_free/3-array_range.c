@@ -14,11 +14,10 @@ int *array_range(int min, int max)
 
 	if (min == 0 && max == 0)
 		return (NULL);
-	size = (max - min);
+	size = (max - min) + 1;
 
 	if (size < 0)
-		size *= -1;
-	size += 1;
+		return (NULL);
 
 	overflow = size * sizeof(int);
 	/* avoid overflow */
@@ -30,12 +29,9 @@ int *array_range(int min, int max)
 	if (arr == NULL)
 		return (NULL);
 
-	printf("arr[cnt]: %d\n", overflow);
-
 	for (i = min; i <= max; i++, cnt++)
 	{
 		arr[cnt] = i;
-		printf("arr[cnt]: %d\n", arr[cnt]);
 	}
 
 	return (arr);
