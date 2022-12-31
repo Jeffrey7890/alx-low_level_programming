@@ -29,12 +29,13 @@ int *array_range(int min, int max)
 
 	if (arr == NULL)
 		return (NULL);
-	
+
 	printf("arr[cnt]: %d\n", overflow);
 
 	for (i = min; i <= max; i++, cnt++)
 	{
 		arr[cnt] = i;
+		printf("arr[cnt]: %d\n", arr[cnt]);
 	}
 
 	return (arr);
