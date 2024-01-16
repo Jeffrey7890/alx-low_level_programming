@@ -38,7 +38,7 @@ char *_strdup(char *str)
 
 	size = _sizeOfStr(str);
 
-	result = malloc((size - 1) * sizeof(char));
+	result = malloc((size + 1) * sizeof(char));
 	if (result == NULL)
 		return (NULL);
 
@@ -48,5 +48,6 @@ char *_strdup(char *str)
 		result[i] = str[i];
 		i++;
 	}
+	result[i] = '\0';
 	return (result);
 }
