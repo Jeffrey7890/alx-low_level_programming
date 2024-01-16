@@ -7,9 +7,15 @@
   * @c: number to check
   * Return: 1 if digit 0 if not
   */
-int _isdigit(int c)
+int _isdigit(char *c)
 {
-	return ((48 <= c && 58 >= c));
+	while (*c != '\0')
+	{
+		if ((48 <= *c && 58 >= *c) == 0)
+			return (0);
+		c++;
+	}
+	return (1);
 }
 
 /**
@@ -32,7 +38,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		add = _isdigit(*argv[i]);
+		add = _isdigit(argv[i]);
 		if (add == 0)
 		{
 			printf("Error\n");
