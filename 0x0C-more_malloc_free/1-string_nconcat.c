@@ -38,8 +38,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *string;
 	size_t size, i, j, size1, size2;
 
-	if (s1 == NULL && s2 == NULL)
-		return ("");
 
 	size1 = _sizeOfStr(s1);
 	size2 = _sizeOfStr(s2);
