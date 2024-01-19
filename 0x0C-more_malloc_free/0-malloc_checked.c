@@ -14,7 +14,7 @@ void *malloc_checked(unsigned int b)
 {
 	void *result;
 
-	if (b > UINT_MAX)
+	if (b == 0)
 		exit(98);
 
 	result = malloc(sizeof(result) * b);
