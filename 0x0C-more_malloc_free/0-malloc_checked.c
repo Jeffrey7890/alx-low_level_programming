@@ -17,10 +17,16 @@ void *malloc_checked(unsigned int b)
 	if (b == 0)
 		exit(98);
 
-	result = malloc(sizeof(result) * b);
+	if (b >= UINT_MAX / sizeof(result))
+		exit(98);
+
+	result = malloc(b);
 
 	if (result == NULL)
+	{
+		free(result);
 		exit(98);
+	}
 
 	return (result);
 }
