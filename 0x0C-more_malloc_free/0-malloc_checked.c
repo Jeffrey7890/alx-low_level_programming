@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-
+#include <limits.h>
 
 
 /**
@@ -13,6 +13,9 @@
 void *malloc_checked(unsigned int b)
 {
 	void *result;
+
+	if (b > UINT_MAX)
+		exit(98);
 
 	result = malloc(sizeof(result) * b);
 
