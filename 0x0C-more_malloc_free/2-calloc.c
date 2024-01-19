@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <limits.h>
+#include <stdio.h>
 
 
 /**
@@ -19,7 +20,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	if (nmemb >= UINT_MAX / size)
+	if (nmemb >= INT_MAX / size)
 		return (NULL);
 
 	result = malloc(nmemb * size);
