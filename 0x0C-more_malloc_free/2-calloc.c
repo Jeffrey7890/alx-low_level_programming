@@ -1,35 +1,32 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
- * _calloc - allocate mem for array init to zero
- * @nmemb: number of members
- * @size: size of each members
- * Return: void pointer
- */
+  * _calloc -  function that allocates memory for an array, using malloc
+  * @nmemb: an array of nmemb elements
+  * @size: size bytes each
+  * Return: void pointer
+  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned char *result, *temp;
-	unsigned int i = 0;
+	int overflow;
+
+	void *ptr;
 
 	if (nmemb == 0 || size == 0)
+		return (0);
+	overflow = nmemb * size;
+
+	/* Avoid integer overflow */
+	if (overflow < 0)
 		return (NULL);
 
-	result = malloc(nmemb);
+	ptr = malloc(overflow);
 
-	if (result == NULL)
+	if (ptr == NULL)
 		return (NULL);
-
-	temp = result;
-
-	while (i < nmemb)
-	{
-		temp = malloc(size);
-		if (temp == NULL)
-			return (NULL);
-		*temp = 0;
-		i++;
-		temp++;
-	}
-	return (result);
+	bzero(ptr, nmemb * size);
+	return (ptr);
 }
