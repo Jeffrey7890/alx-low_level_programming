@@ -1,41 +1,35 @@
 #include "main.h"
 #include <stdlib.h>
-#include <limits.h>
-
-
 
 /**
- * _calloc - allocates array memory using malloc
- *
- * @nmemb: number of member in array
- * @size: size of memory
- *
- * Return: pointer to memory or NULL if fail
+ * _calloc - allocate mem for array init to zero
+ * @nmemb: number of members
+ * @size: size of each members
+ * Return: void pointer
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned char *result;
-	unsigned int i;
+	unsigned char *result, *temp;
+	unsigned int i = 0;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	if (size != 0 && nmemb > INT_MAX / size)
-		return (NULL);
-
-	result = malloc(nmemb * size);
+	result = malloc(nmemb);
 
 	if (result == NULL)
-	{
 		return (NULL);
-	}
 
-	i = 0;
+	temp = result;
+
 	while (i < nmemb)
 	{
-		result[i] = 0;
+		temp = malloc(size);
+		if (temp == NULL)
+			return (NULL);
+		*temp = 0;
 		i++;
+		temp++;
 	}
-
-	return ((void *)result);
+	return (result);
 }
