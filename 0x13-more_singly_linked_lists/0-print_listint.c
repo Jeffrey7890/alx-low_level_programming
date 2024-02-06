@@ -18,14 +18,14 @@ size_t print_listint(const listint_t *h)
 		return (i);
 	trav = h;
 
-	while(trav != NULL)
+	while (trav != NULL)
 	{
 		printf("%d\n", trav->n);
 		i++;
 		trav = trav->next;
 	}
 
-	return(i);
+	return (i);
 }
 
 
