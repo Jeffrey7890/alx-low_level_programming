@@ -7,20 +7,19 @@
  */
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *front, *center, *back;
+	listint_t *front, *back;
 
 	if (*head == NULL)
 		return NULL;
 
 	back = NULL;
-	center = *head;
 	front = (*head)->next;
 
-	while (center != NULL)
+	while ((*head) != NULL)
 	{
-		center->next = back;
-		back = center;
-		center = front;
+		(*head)->next = back;
+		back = (*head);
+		(*head) = front;
 		if (front != NULL)
 			front = front->next;
 	}
