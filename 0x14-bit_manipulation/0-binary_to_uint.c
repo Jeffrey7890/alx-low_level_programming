@@ -36,6 +36,8 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int i = 0;
 	int r = 0;
 
+	if (b == NULL)
+		return (0);
 	while (len > 0)
 	{
 		r = b[len - 1] - 0x30;
