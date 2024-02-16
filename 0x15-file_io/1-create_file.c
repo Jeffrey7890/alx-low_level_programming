@@ -1,7 +1,25 @@
 #include "main.h"
 #include <fcntl.h>
 #include <sys/stat.h>
-#include <string.h>
+
+
+/**
+  * _strlen - gets the length of a string
+  * @s: string
+  * Return: integer number
+  */
+int _strlen(char *s)
+{
+	int count = 0;
+
+	do {
+		count++;
+		s++;
+	} while (*s != '\0');
+
+	return (count);
+}
+
 
 
 /**
@@ -26,7 +44,7 @@ int create_file(const char *filename, char *text_content)
 		close(fd);
 		return (1);
 	}
-	len = strlen(text_content);
+	len = _strlen(text_content);
 	if (write(fd, text_content, len) != len)
 	{
 		close(fd);
