@@ -5,6 +5,12 @@
 #include <unistd.h>
 
 
+/**
+ * read_textfile - reads a text file men
+ * @filename: name of file
+ * @letters: number of letters to print
+ * Return: number of letters printed
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t nread;
