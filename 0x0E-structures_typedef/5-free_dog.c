@@ -3,6 +3,11 @@
 #include <stddef.h>
 
 
+/**
+ * free_dog - frees the dog structure
+ * @d: dog data structure
+ * Return: void
+ */
 void free_dog(dog_t *d)
 {
 	if (d == NULL)
@@ -14,7 +19,7 @@ void free_dog(dog_t *d)
 		free(d);
 		return;
 	}
-	else if(d->name != NULL && d->owner == NULL)
+	else if (d->name != NULL && d->owner == NULL)
 	{
 		free(d->name);
 		free(d);
