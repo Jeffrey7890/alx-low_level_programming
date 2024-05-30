@@ -1,0 +1,25 @@
+.PHONY: all clean oclean fclean 
+
+CC = gcc
+SRC := $(wildcard *.c) 
+OBJ := $(SRC:%.c=%.o)
+NAME := school
+RM := rm -f
+
+%.o: %.c
+	gcc -c -o $@ $<
+
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
+
+
+clean:
+	${RM} *~ *.swap ${NAME}
+
+oclean:
+	${RM} ${OBJ}
+
+fclean:
+	${RM} *~ *.swap ${NAME} ${OBJ}
+
+re:oclean all
