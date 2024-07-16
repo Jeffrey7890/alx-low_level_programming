@@ -25,6 +25,9 @@ int jump_search(int *array, size_t n, int value)
 	size_t a, b, s;
 	size_t x = 0, y = 0;
 
+	if (array == NULL)
+		return (-1);
+
 	a = 0;
 	s = sqrt(n);
 	b = s;
@@ -35,9 +38,7 @@ int jump_search(int *array, size_t n, int value)
 		a = b;
 		y = a;
 		if (a >= n)
-		{
 			break;
-		}
 		b += s;
 	}
 	if (x == 0 && y == 0)
